@@ -23,7 +23,7 @@ public class TaskDayThreeUnitConverter extends AppCompatActivity {
                 try {
                     float cmValue = Float.parseFloat(cmEditText.getText().toString());
                     float inchesValue = cmValue * 0.393701f;
-                    inchesTextView.setText(String.format("%.2f", inchesValue));
+                    inchesTextView.setText(String.format("%.2f", inchesValue) + " Inches");
                 } catch (NumberFormatException e) {
                     inchesTextView.setText("Invalid Input");
                 }
